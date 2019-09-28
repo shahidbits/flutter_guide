@@ -1,24 +1,31 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_guide/screens/home.dart';
-import 'package:flutter_guide/screens/screenRaisedButton.dart';
-import 'package:flutter_guide/screens/screenRaisedButtonWithParams.dart';
-import 'package:flutter_guide/screens/screenFlatButton.dart';
-import 'package:flutter_guide/screens/screenIconButton.dart';
-import 'package:flutter_guide/screens/ScreenTextField.dart';
-import 'package:flutter_guide/screens/ScreenCheckbox.dart';
-import 'package:flutter_guide/screens/ScreenRadios.dart';
-import 'package:flutter_guide/screens/ScreenSwitches.dart';
-import 'package:flutter_guide/screens/ScreenSlider.dart';
-import 'package:flutter_guide/screens/ScreenDatePicker.dart';
-import 'package:flutter_guide/screens/screenAppBar.dart';
-import 'package:flutter_guide/screens/screenFloatingActionButton.dart';
-import 'package:flutter_guide/screens/screenDrawer.dart';
-import 'package:flutter_guide/screens/screenFooterButtons.dart';
-import 'package:flutter_guide/screens/screenBottomNavigationBar.dart';
-import 'package:flutter_guide/screens/screenBottomSheet.dart';
-import 'package:flutter_guide/screens/screenSnackBar.dart';
-import 'package:flutter_guide/screens/screenAlertDialog.dart';
-import 'package:flutter_guide/screens/screenSimpleDialog.dart';
+import 'package:flutter_guide/screens/homeBeginners.dart';
+import 'package:flutter_guide/screens/homeIntermediate.dart';
+import 'package:flutter_guide/screens/homeAdvanced.dart';
+import 'package:flutter_guide/screens/beginners/screenRaisedButton.dart';
+import 'package:flutter_guide/screens/beginners/screenRaisedButtonWithParams.dart';
+import 'package:flutter_guide/screens/beginners/screenFlatButton.dart';
+import 'package:flutter_guide/screens/beginners/screenIconButton.dart';
+import 'package:flutter_guide/screens/beginners/screenTextField.dart';
+import 'package:flutter_guide/screens/beginners/screenCheckbox.dart';
+import 'package:flutter_guide/screens/beginners/screenRadios.dart';
+import 'package:flutter_guide/screens/beginners/screenSwitches.dart';
+import 'package:flutter_guide/screens/beginners/screenSlider.dart';
+import 'package:flutter_guide/screens/beginners/screenDatePicker.dart';
+import 'package:flutter_guide/screens/beginners/screenAppBar.dart';
+import 'package:flutter_guide/screens/beginners/screenFloatingActionButton.dart';
+import 'package:flutter_guide/screens/beginners/screenDrawer.dart';
+import 'package:flutter_guide/screens/beginners/screenFooterButtons.dart';
+import 'package:flutter_guide/screens/beginners/screenBottomNavigationBar.dart';
+import 'package:flutter_guide/screens/beginners/screenBottomSheet.dart';
+import 'package:flutter_guide/screens/beginners/screenSnackBar.dart';
+import 'package:flutter_guide/screens/beginners/screenAlertDialog.dart';
+import 'package:flutter_guide/screens/beginners/screenSimpleDialog.dart';
+import 'package:flutter_guide/screens/beginners/screenRowsAndColumn.dart';
+import 'package:flutter_guide/screens/beginners/screenCard.dart';
+import 'package:flutter_guide/screens/beginners/screenExpanded.dart';
+import 'package:flutter_guide/screens/beginners/screenListViewBuilder.dart';
 
 void main() => runApp(new MyApp());
 
@@ -29,6 +36,9 @@ class MyApp extends StatelessWidget {
       title: 'Navigtion',
       routes: <String, WidgetBuilder>{
         '/Home': (BuildContext context) => new Home(),
+        '/HomeBeginners': (BuildContext context) => new HomeBeginners(),
+        '/HomeIntermediate': (BuildContext context) => new HomeIntermediate(),
+        '/HomeAdvanced': (BuildContext context) => new HomeAdvanced(),
         '/RaisedButton': (BuildContext context) => new ScreenRaisedButton(),
         '/RaisedButtonWithParams': (BuildContext context) =>
             new ScreenRaisedButtonWithParams(),
@@ -51,6 +61,11 @@ class MyApp extends StatelessWidget {
         '/SnackBar': (BuildContext context) => new ScreenSnackBar(),
         '/AlertDialog': (BuildContext context) => new ScreenAlertDialog(),
         '/SimpleDialog': (BuildContext context) => new ScreenSimpleDialog(),
+        '/RowsAndColumns': (BuildContext context) => new ScreenRowsAndColumns(),
+        '/Card': (BuildContext context) => new ScreenCard(),
+        '/Expanded': (BuildContext context) => new ScreenExpanded(),
+        '/ListviewBuilder': (BuildContext context) =>
+            new ScreenListViewBuilder(),
       },
       home: new Home(),
     );
