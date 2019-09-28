@@ -15,6 +15,10 @@ import 'package:flutter_guide/screens/screenFloatingActionButton.dart';
 import 'package:flutter_guide/screens/screenDrawer.dart';
 import 'package:flutter_guide/screens/screenFooterButtons.dart';
 import 'package:flutter_guide/screens/screenBottomNavigationBar.dart';
+import 'package:flutter_guide/screens/screenBottomSheet.dart';
+import 'package:flutter_guide/screens/screenSnackBar.dart';
+import 'package:flutter_guide/screens/screenAlertDialog.dart';
+import 'package:flutter_guide/screens/screenSimpleDialog.dart';
 
 void main() => runApp(new MyApp());
 
@@ -43,6 +47,10 @@ class MyApp extends StatelessWidget {
         '/FooterButtons': (BuildContext context) => new ScreenFooterButtons(),
         '/BottomNavigationBar': (BuildContext context) =>
             new ScreenBottomNavigationBar(),
+        '/BottomSheet': (BuildContext context) => new ScreenBottomSheet(),
+        '/SnackBar': (BuildContext context) => new ScreenSnackBar(),
+        '/AlertDialog': (BuildContext context) => new ScreenAlertDialog(),
+        '/SimpleDialog': (BuildContext context) => new ScreenSimpleDialog(),
       },
       home: new Home(),
     );

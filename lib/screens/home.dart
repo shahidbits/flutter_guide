@@ -130,6 +130,39 @@ class Home extends StatelessWidget {
                         }),
                   ],
                 ),
+                new Container(
+                  padding: new EdgeInsets.all(10.0),
+                  child: new Text(
+                    'Notification',
+                    style: new TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                new Column(
+                  children: <Widget>[
+                    new RaisedButton(
+                        child: new Text('Bottom Sheet'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/BottomSheet');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Snack Bar'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/SnackBar');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Alert Dialog'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/AlertDialog');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Simple Dialog'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/SimpleDialog');
+                        }),
+                  ],
+                ),
               ],
             ),
           ),
