@@ -50,7 +50,7 @@ class HomeIntermediate extends StatelessWidget {
                 new Container(
                   padding: new EdgeInsets.all(10.0),
                   child: new Text(
-                    'Input Widgets',
+                    'Layout Widgets',
                     style: new TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -59,9 +59,24 @@ class HomeIntermediate extends StatelessWidget {
                 new Column(
                   children: <Widget>[
                     new RaisedButton(
-                        child: new Text('Text Field'),
+                        child: new Text('Expansion Panel'),
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/TextField');
+                          Navigator.of(context).pushNamed('/ExpansionPanel');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Tab Bar View'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/TabBarView');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Stepper'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/Stepper');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Grid View'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/GridView');
                         }),
                   ],
                 ),
