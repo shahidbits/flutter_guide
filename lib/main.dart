@@ -26,6 +26,10 @@ import 'package:flutter_guide/screens/beginners/screenRowsAndColumn.dart';
 import 'package:flutter_guide/screens/beginners/screenCard.dart';
 import 'package:flutter_guide/screens/beginners/screenExpanded.dart';
 import 'package:flutter_guide/screens/beginners/screenListViewBuilder.dart';
+import 'package:flutter_guide/screens/intermediate/screenTooltips.dart';
+import 'package:flutter_guide/screens/intermediate/screenChipsAndKeys.dart';
+import 'package:flutter_guide/screens/intermediate/screenSlidersAndIndicators.dart';
+import 'package:flutter_guide/screens/intermediate/screenPopMenuButton.dart';
 
 void main() => runApp(new MyApp());
 
@@ -66,6 +70,11 @@ class MyApp extends StatelessWidget {
         '/Expanded': (BuildContext context) => new ScreenExpanded(),
         '/ListviewBuilder': (BuildContext context) =>
             new ScreenListViewBuilder(),
+        '/Tooltips': (BuildContext context) => new ScreenTooltips(),
+        '/ChipsAndKeys': (BuildContext context) => new ScreenChipsAndKeys(),
+        '/SlidersAndIndicators': (BuildContext context) =>
+            new ScreenSlidersAndIndicators(),
+        '/PopupMenuButton': (BuildContext context) => new ScreenPopMenuButton(),
       },
       home: new Home(),
     );

@@ -16,7 +16,7 @@ class HomeIntermediate extends StatelessWidget {
                 new Container(
                   padding: new EdgeInsets.all(10.0),
                   child: new Text(
-                    'Button Widgets',
+                    'Basic Widgets',
                     style: new TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -25,9 +25,25 @@ class HomeIntermediate extends StatelessWidget {
                 new Column(
                   children: <Widget>[
                     new RaisedButton(
-                        child: new Text('Raised Button'),
+                        child: new Text('Tooltips'),
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/RaisedButton');
+                          Navigator.of(context).pushNamed('/Tooltips');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Chips and Keys'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/ChipsAndKeys');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Sliders and Indicators'),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed('/SlidersAndIndicators');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Popup Menu Button'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/PopupMenuButton');
                         }),
                   ],
                 ),
