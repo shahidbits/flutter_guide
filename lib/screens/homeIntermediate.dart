@@ -83,7 +83,7 @@ class HomeIntermediate extends StatelessWidget {
                 new Container(
                   padding: new EdgeInsets.all(10.0),
                   child: new Text(
-                    'Scaffold',
+                    'Charts',
                     style: new TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -92,9 +92,19 @@ class HomeIntermediate extends StatelessWidget {
                 new Column(
                   children: <Widget>[
                     new RaisedButton(
-                        child: new Text('App Bar'),
+                        child: new Text('Charts'),
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/AppBar');
+                          Navigator.of(context).pushNamed('/Charts');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Grouping Data'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/GroupingData');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Animated Pie Charts'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/AnimatedPieCharts');
                         }),
                   ],
                 ),

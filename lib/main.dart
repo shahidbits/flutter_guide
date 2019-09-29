@@ -34,6 +34,9 @@ import 'package:flutter_guide/screens/intermediate/screenExpansionPanel.dart';
 import 'package:flutter_guide/screens/intermediate/screenTabBarView.dart';
 import 'package:flutter_guide/screens/intermediate/screenStepper.dart';
 import 'package:flutter_guide/screens/intermediate/screenGridView.dart';
+import 'package:flutter_guide/screens/intermediate/screenCharts.dart';
+import 'package:flutter_guide/screens/intermediate/screenGroupingData.dart';
+import 'package:flutter_guide/screens/intermediate/screenAnimatedPieCharts.dart';
 
 void main() => runApp(new MyApp());
 
@@ -83,6 +86,10 @@ class MyApp extends StatelessWidget {
         '/TabBarView': (BuildContext context) => new ScreenTabBarView(),
         '/Stepper': (BuildContext context) => new ScreenStepper(),
         '/GridView': (BuildContext context) => new ScreenGridView(),
+        '/Charts': (BuildContext context) => new ScreenCharts(),
+        '/GroupingData': (BuildContext context) => new ScreenGroupingData(),
+        '/AnimatedPieCharts': (BuildContext context) =>
+            new ScreenAnimatedPieCharts(),
       },
       home: new Home(),
     );
