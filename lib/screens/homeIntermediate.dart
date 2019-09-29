@@ -111,7 +111,7 @@ class HomeIntermediate extends StatelessWidget {
                 new Container(
                   padding: new EdgeInsets.all(10.0),
                   child: new Text(
-                    'Notification',
+                    'Custom Widgets',
                     style: new TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
@@ -120,9 +120,24 @@ class HomeIntermediate extends StatelessWidget {
                 new Column(
                   children: <Widget>[
                     new RaisedButton(
-                        child: new Text('Bottom Sheet'),
+                        child: new Text('Custom Widget'),
                         onPressed: () {
-                          Navigator.of(context).pushNamed('/BottomSheet');
+                          Navigator.of(context).pushNamed('/CustomWidget');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Stateful Widget'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/StatefulWidget');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Nested Widget'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/NestedWidget');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Child to Parent'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/ChildToParent');
                         }),
                   ],
                 ),

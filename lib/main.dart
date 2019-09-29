@@ -37,6 +37,10 @@ import 'package:flutter_guide/screens/intermediate/screenGridView.dart';
 import 'package:flutter_guide/screens/intermediate/screenCharts.dart';
 import 'package:flutter_guide/screens/intermediate/screenGroupingData.dart';
 import 'package:flutter_guide/screens/intermediate/screenAnimatedPieCharts.dart';
+import 'package:flutter_guide/screens/intermediate/screenCustomWidget.dart';
+import 'package:flutter_guide/screens/intermediate/screenStatefulWidget.dart';
+import 'package:flutter_guide/screens/intermediate/screenNestedWidget.dart';
+import 'package:flutter_guide/screens/intermediate/screenChildToParent.dart';
 
 void main() => runApp(new MyApp());
 
@@ -90,6 +94,10 @@ class MyApp extends StatelessWidget {
         '/GroupingData': (BuildContext context) => new ScreenGroupingData(),
         '/AnimatedPieCharts': (BuildContext context) =>
             new ScreenAnimatedPieCharts(),
+        '/CustomWidget': (BuildContext context) => new ScreenCustomWidget(),
+        '/StatefulWidget': (BuildContext context) => new ScreenStatefulWidget(),
+        '/NestedWidget': (BuildContext context) => new ScreenNestedWidget(),
+        '/ChildToParent': (BuildContext context) => new ScreenChildToParent(),
       },
       home: new Home(),
     );
