@@ -194,6 +194,9 @@ class HomeBeginners extends StatelessWidget {
                         onPressed: () {
                           Navigator.of(context).pushNamed('/ListviewBuilder');
                         }),
+                    new Padding(
+                      padding: EdgeInsets.only(bottom: 200.0),
+                    ),
                   ],
                 ),
               ],

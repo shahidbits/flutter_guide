@@ -41,6 +41,10 @@ import 'package:flutter_guide/screens/intermediate/screenCustomWidget.dart';
 import 'package:flutter_guide/screens/intermediate/screenStatefulWidget.dart';
 import 'package:flutter_guide/screens/intermediate/screenNestedWidget.dart';
 import 'package:flutter_guide/screens/intermediate/screenChildToParent.dart';
+import 'package:flutter_guide/screens/intermediate/screenPushNamed.dart';
+import 'package:flutter_guide/screens/intermediate/screenPushNamedUntil.dart';
+import 'package:flutter_guide/screens/intermediate/screenPushAndPop.dart';
+import 'package:flutter_guide/screens/intermediate/screenNavFromChildWidget.dart';
 
 void main() => runApp(new MyApp());
 
@@ -98,6 +102,11 @@ class MyApp extends StatelessWidget {
         '/StatefulWidget': (BuildContext context) => new ScreenStatefulWidget(),
         '/NestedWidget': (BuildContext context) => new ScreenNestedWidget(),
         '/ChildToParent': (BuildContext context) => new ScreenChildToParent(),
+        '/PushNamed': (BuildContext context) => new ScreenPushNamed(),
+        '/PushNamedUntil': (BuildContext context) => new ScreenPushNamedUntil(),
+        '/PushAndPop': (BuildContext context) => new ScreenPushAndPop(),
+        '/NavFromChildWidget': (BuildContext context) =>
+            new ScreenNavFromChildWidget(),
       },
       home: new Home(),
     );

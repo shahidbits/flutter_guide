@@ -141,6 +141,45 @@ class HomeIntermediate extends StatelessWidget {
                         }),
                   ],
                 ),
+                new Container(
+                  padding: new EdgeInsets.all(10.0),
+                  child: new Text(
+                    'Navigation',
+                    style: new TextStyle(
+                      fontWeight: FontWeight.bold,
+                    ),
+                  ),
+                ),
+                new Column(
+                  children: <Widget>[
+                    new RaisedButton(
+                        child: new Text('Push Named'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/PushNamed');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Push Named Until'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamedAndRemoveUntil(
+                              '/PushNamedUntil',
+                              (Route<dynamic> route) => false);
+                        }),
+                    new RaisedButton(
+                        child: new Text('Push and Pop'),
+                        onPressed: () {
+                          Navigator.of(context).pushNamed('/PushAndPop');
+                        }),
+                    new RaisedButton(
+                        child: new Text('Nav from Child Widget'),
+                        onPressed: () {
+                          Navigator.of(context)
+                              .pushNamed('/NavFromChildWidget');
+                        }),
+                    new Padding(
+                      padding: EdgeInsets.only(bottom: 200.0),
+                    ),
+                  ],
+                ),
               ],
             ),
           ),
